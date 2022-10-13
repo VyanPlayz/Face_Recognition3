@@ -1,0 +1,27 @@
+body{
+    background-color: aqua;
+    font-size: 18px;
+}
+.heading{
+    width: 100%;
+    margin-top: 0px;
+    font-size: 29px;
+    font-family: 'Russo One', sans-serif;
+}
+#camera{
+    border: 2px solid black;
+    width: 350px;
+    height: 300px;
+}
+h3{
+    width:60%;
+    font-family: 'Oswald', sans-serif
+}
+label{
+    font-family: 'Lobster', cursive;
+    font-size: 22px;
+}
+p{
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+}

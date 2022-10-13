@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Face Recognition App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald&family=Pacifico&family=Russo+One&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank"></script>
+
+    </head>
+
+    <body>
+    <center>
+        <br><br>
+        <h1 class="heading">Face Recognition App</h1>
+        <br><br>
+
+        <p style="font-size: 22px;">Model is trained to identify the following people : </p>
+
+        <b class="class_of_people">
+            <h3 class="btn btn-primary" style="font-size: 22px; font-family: 'Oswald', sans-serif;">Father</h3>
+            <hr>
+            <h3 class="btn btn-success" style="font-size: 22px ;">Mother</h3>
+            <hr>
+            <h3 class="btn btn-info" style="font-size: 22px;">Sister</h3>
+            <hr>
+            <h3 class="btn btn-warning" style="font-size: 22px;">Brother</h3>
+            <hr>
+            <h3 class="btn btn-primary" style="font-size: 22px;">Me (Vyan)</h3>
+            <hr>
+          </b>
+
+          <label>Webcam View - </label>
+
+          <br><br>
+
+      <div id="camera"></div>
+
+      <br><br>
+
+      <div id="result"></div>
+
+      <br>
+
+      <button onclick="take_snapshot()" class="btn btn-primary" style="font-size: 18px; font-family: 'Oswald', sans-serif">Capture Image</button>
+
+      <br><br>
+
+      <button onclick="identify()" class="btn btn-success" style="font-size: 18px; font-family: 'Oswald', sans-serif">Identify Person</button>
+
+      <br><br>
+
+      <p style="font-size: 22px;">Person :  <span id="result_label"></span></p>
+      <p style="font-size: 22px;">Accuracy :  <span id="result_confidence"></span></p>
+
+    </center>
+      
+
+    </body>
+<script src="main.js"></script>
+</html>
